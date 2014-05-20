@@ -12,11 +12,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+//#ifndef ANDROID
     //    uncomment to set corner radius for all buttons
     //
     //    [[BButton appearance] setButtonCornerRadius:@50.0f];
-    
+//#endif
     BButtonType type = 0;
     
     for(int i = 0; i < 2; i++) {

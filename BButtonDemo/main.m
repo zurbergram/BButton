@@ -13,6 +13,9 @@
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([TWBSAppDelegate class]));
+#ifdef ANDROID
+      [UIScreen mainScreen].currentMode = [UIScreenMode emulatedMode:UIScreenBestEmulatedMode];
+#endif        
+      return UIApplicationMain(argc, argv, nil, NSStringFromClass([TWBSAppDelegate class]));
     }
 }

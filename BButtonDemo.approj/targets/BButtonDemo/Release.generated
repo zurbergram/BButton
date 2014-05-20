@@ -1,0 +1,205 @@
+{
+    "assets": [
+        {
+            "asset": "BButtonDemo/en.lproj/InfoPlist.strings", 
+            "target": "en.lproj/InfoPlist.strings"
+        }, 
+        {
+            "asset": "BButton/Resources/FontAwesome.ttf", 
+            "target": "FontAwesome.ttf"
+        }, 
+        {
+            "asset": "BButtonDemo/Images.xcassets", 
+            "target": null
+        }
+    ], 
+    "config": {
+        "APPLICATION_FULL_NAME": "BButtonDemo", 
+        "APPLICATION_IDENTIFIER": "com.hexedbits.BButtonDemo", 
+        "APPLICATION_NAME": "BButtonDemo", 
+        "LONG_VERSION": "3.2.3", 
+        "SHORT_VERSION": "3.2.3", 
+        "TEMPLATE_VALUES": {
+            "EXECUTABLE_NAME": "BButtonDemo", 
+            "PRODUCT_NAME": "BButtonDemo"
+        }
+    }, 
+    "defines": {
+        "NS_BLOCK_ASSERTIONS": 1, 
+        "__IPHONE_OS_VERSION_MIN_REQUIRED": 70000
+    }, 
+    "deps": [
+        "UIKit", 
+        "CoreGraphics", 
+        "UIKit", 
+        "Foundation"
+    ], 
+    "flags": [
+        "-fobjc-arc", 
+        "-fasm-blocks", 
+        {
+            "flag": "-std=gnu99", 
+            "not_type": "c++"
+        }, 
+        {
+            "flag": "-fgnu-keywords", 
+            "not_type": "c++"
+        }, 
+        "-fno-asm", 
+        "-fpascal-strings", 
+        "-Wempty-body", 
+        "-Wshorten-64-to-32", 
+        "-Wno-deprecated-declarations", 
+        "-Wswitch", 
+        "-Wparentheses", 
+        "-Wformat", 
+        "-Wuninitialized", 
+        "-Wunused-function", 
+        "-Wunused-value", 
+        "-Wunused-variable", 
+        {
+            "flag": "-Winvalid-offsetof", 
+            "type": "c++"
+        }, 
+        {
+            "flag": "-Wprotocol", 
+            "type": "objc"
+        }, 
+        {
+            "flag": "-Wundeclared-selector", 
+            "type": "objc"
+        }
+    ], 
+    "header_paths": [
+        {
+            "header_path": "BButtonDemo-generated-files.hmap", 
+            "hmap": {}, 
+            "type": "iquote"
+        }, 
+        {
+            "header_path": "BButtonDemo-own-target-headers.hmap", 
+            "hmap": {}, 
+            "type": "I"
+        }, 
+        {
+            "header_path": "BButtonDemo-all-target-headers.hmap", 
+            "hmap": {}, 
+            "type": "I"
+        }, 
+        {
+            "header_path": "BButtonDemo-project-headers.hmap", 
+            "hmap": {
+                "BButton.h": {
+                    "key": "BButton.h", 
+                    "prefix": "BButton/Classes/", 
+                    "suffix": "BButton.h"
+                }, 
+                "BButtonDemo-Prefix.pch": {
+                    "key": "BButtonDemo-Prefix.pch", 
+                    "prefix": "BButtonDemo/", 
+                    "suffix": "BButtonDemo-Prefix.pch"
+                }, 
+                "NSString+FontAwesome.h": {
+                    "key": "NSString+FontAwesome.h", 
+                    "prefix": "BButton/Classes/", 
+                    "suffix": "NSString+FontAwesome.h"
+                }, 
+                "TWBSAppDelegate.h": {
+                    "key": "TWBSAppDelegate.h", 
+                    "prefix": "BButtonDemo/", 
+                    "suffix": "TWBSAppDelegate.h"
+                }, 
+                "TWBSDemoViewController.h": {
+                    "key": "TWBSDemoViewController.h", 
+                    "prefix": "BButtonDemo/", 
+                    "suffix": "TWBSDemoViewController.h"
+                }, 
+                "UIColor+BButton.h": {
+                    "key": "UIColor+BButton.h", 
+                    "prefix": "BButton/Classes/", 
+                    "suffix": "UIColor+BButton.h"
+                }
+            }, 
+            "type": "iquote"
+        }, 
+        {
+            "header_path": "/var/folders/m6/hk3gl9fd0qxcjm8mvsg107vr0000gn/T/tmplHBTY7/BUILT_PRODUCTS_DIR/include", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "/var/folders/m6/hk3gl9fd0qxcjm8mvsg107vr0000gn/T/tmplHBTY7/DERIVED_FILE_DIR/armv7", 
+            "type": "I"
+        }, 
+        {
+            "header_path": "/var/folders/m6/hk3gl9fd0qxcjm8mvsg107vr0000gn/T/tmplHBTY7/DERIVED_FILE_DIR", 
+            "type": "I"
+        }
+    ], 
+    "infoplists": [
+        "./BButtonDemo/BButtonDemo-Info.plist"
+    ], 
+    "libs": [], 
+    "modules": [], 
+    "pchs": [
+        "./BButtonDemo/BButtonDemo-Prefix.pch"
+    ], 
+    "sources": [
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "BButton/Classes/BButton.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "BButton/Classes/NSString+FontAwesome.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "BButton/Classes/UIColor+BButton.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "BButtonDemo/TWBSAppDelegate.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "BButtonDemo/TWBSDemoViewController.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "BButtonDemo/main.m"
+        }
+    ], 
+    "storyboards": [
+        {
+            "storyboard": "BButtonDemo/Base.lproj/Main.storyboard", 
+            "target": null
+        }
+    ], 
+    "type": "app", 
+    "version": "3", 
+    "xcdatamodels": [], 
+    "xcode_project": "BButtonDemo.xcodeproj", 
+    "xibs": []
+}

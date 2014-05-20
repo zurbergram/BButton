@@ -57,8 +57,11 @@ typedef NS_ENUM(NSUInteger, BButtonType) {
 /**
  *  An instanace of `BButton` is a subclass of `UIButton` that is styled like the Twitter Bootstrap buttons and is drawn entirely with `CoreGraphics`.
  */
+#ifdef ANDROID
+@interface BButton : UIButton
+#else
 @interface BButton : UIButton <UIAppearance>
-
+#endif
 /**
  *  The color of the button in its normal state. `BButton` automatically darks this color when the button enters its pressed state. The default value is `[UIColor bb_defaultColorV3]`, the color value associated with `BButtonTypeDefault`. @see BButtonType.
  */

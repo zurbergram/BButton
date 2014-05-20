@@ -199,10 +199,11 @@ static NSArray * kFontAwesomeStrings;
 
 - (NSNumber *)buttonCornerRadius
 {
+#ifndef ANDROID
     if (!_buttonCornerRadius) {
         _buttonCornerRadius = [[[self class] appearance] buttonCornerRadius];
     }
-    
+#endif
     if (_buttonCornerRadius) {
         return _buttonCornerRadius;
     }
